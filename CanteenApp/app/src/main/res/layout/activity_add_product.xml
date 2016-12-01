@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/imageButton">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarNewOne"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+            <ImageButton
+                android:id="@+id/takePicture"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+               android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/camera2"
+                android:clickable="true"
+
+                />
+            </android.support.v7.widget.Toolbar>
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:id="@+id/product1name"
+        android:hint="Product 1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/product2name"
+        android:hint="Product 1"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product1name"
+        android:layout_alignLeft="@+id/product1name"
+        android:layout_alignStart="@+id/product1name"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/product3name"
+        android:hint="Product 3"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product2name"
+        android:layout_alignLeft="@+id/product2name"
+        android:layout_alignStart="@+id/product2name"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/addPrice"
+        android:hint="Price"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product3name"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+
+        android:layout_below="@+id/addPrice"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add product"
+        android:id="@+id/addProductButton"
+
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>
